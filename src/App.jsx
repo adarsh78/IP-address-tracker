@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-// at_JboHb0aReO7vE1mvNyjLOZab8cJFO
 
 const App = () => {
+
+  const apiKey = import.meta.env.VITE_MY_API_KEY;
 
   const [userIp, setUserIp] = useState("");
 
@@ -25,7 +26,7 @@ const App = () => {
 
   const fetchDataByIp = async () => {
     try {
-      const response = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_JboHb0aReO7vE1mvNyjLOZab8cJFO&ipAddress=${userIp}`);
+      const response = await fetch(`https://geo.ipify.org/api/v2/country?apiKey=${apiKey}&ipAddress=${userIp}`);
       const data = await response.json();
 
       console.log(data);
