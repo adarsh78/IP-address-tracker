@@ -84,7 +84,7 @@ const App = () => {
   console.log(coordinates);
 
   const customIcon = L.icon({
-    iconUrl: './images/icon-location.svg',
+    iconUrl: '/images/icon-location.svg',
     iconSize: [41, 50], 
   });
 
@@ -97,7 +97,7 @@ const App = () => {
 
   return (
     <>
-      <div className='bg-[url("./images/pattern-bg-mobile.png")] md:bg-[url("./images/pattern-bg-desktop.png")] w-full h-[16.5rem] bg-no-repeat'>
+      <div className='bg-[url("/images/pattern-bg-mobile.png")] md:bg-[url("/images/pattern-bg-desktop.png")] w-full h-[16.5rem] bg-no-repeat'>
         <h1 className="text-center pt-5 text-white text-[1.5rem] font-medium">
           IP Address Tracker
         </h1>
